@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto dan Pelayanan</title>
+    <style>
+      body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #444;
+    line-height: 1.6;
+}
+
+header {
+    background: url('https://png.pngtree.com/background/20210711/original/pngtree-black-atmosphere-simple-meal-food-food-banner-picture-image_1084037.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.services, .menu {
+    background: #ffffff;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    margin: 0.8rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+ul li:hover {
+    background: #f8f8f8;
+    transform: scale(1.03);
+}
+
+ul li:before {
+    content: '🍴';
+    margin-right: 0.8rem;
+    font-size: 1.5rem;
+    color: #d9534f;
+}
+
+.contact {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background: #28a745;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.contact a:hover {
+    background: #218838;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 2rem 0; /* Vertical padding */
+    margin-top: 3rem; 
+}
+
+footer .container {
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 0 2rem; 
+}
+
+/* Footer Content Layout (Flexbox) */
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+/* Footer Sections Styling */
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+/* Footer Left Section */
+footer .footer-left h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+footer .footer-left p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Footer Center Section */
+footer .footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-center ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer .footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-center ul li a:hover {
+    color: #28a745; 
+}
+
+/* Footer Right Section */
+footer .footer-right h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer .footer-right p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Footer Bottom Section */
+footer .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
+
+footer .footer-bottom p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    .contact a {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-left,
+    footer .footer-center,
+    footer .footer-right {
+        flex: 1 0 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Heri Resto</h1>
+        <p>Pelayanan Terbaik untuk Anda</p>
+    </header>
+    <div class="container">
+        <section class="services">
+            <h2>Pelayanan</h2>
+            <ul>
+                <li>Pelayanan Cepat</li>
+                <li>Tempat Bersih dan Nyaman</li>
+                <li>WiFi Gratis</li>
+                <li>Parkir Luas</li>
+            </ul>
+        </section>
+        <section class="menu">
+            <h2>Menu</h2>
+            <h3>Makanan</h3>
+            <ul>
+                <li>Nasi Goreng Spesial <br><img src="images/nasigoreng.jpg" alt="Nasi Goreng Spesial"></li>
+                <li>Mie Ayam <br><img src="images/mieayam.jpg" alt="Mie Ayam"></li>
+                <li>Sate Ayam <br><img src="images/sateayam.jpg" alt="Sate Ayam"></li>
+                <li>Sop Buntut <br><img src="images/sopbuntut.jpg" alt="Sop Buntut"></li>
+            </ul>
+            <h3>Minuman</h3>
+            <ul>
+                <li>Teh Manis Dingin <br><img src="images/tehmanis.jpg" alt="Teh Manis Dingin"></li>
+                <li>Kopi Hitam <br><img src="images/kopihitam.jpg" alt="Kopi Hitam"></li>
+                <li>Jus Jeruk <br><img src="images/jusjeruk.jpg" alt="Jus Jeruk"></li>
+                <li>Es Kelapa Muda <br><img src="images/eskelapa.jpg" alt="Es Kelapa Muda"></li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Pesan Online</h2>
+            <p>Hubungi kami melalui WhatsApp untuk pemesanan:</p>
+            <a href="https://wa.me/6281997794672" target="_blank">Pesan via WhatsApp</a>
+        </section>
+        <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <h3>Heri Resto</h3>
+                        <p>Makanan lezat, suasana sempurna. Nikmati pengalaman bersantap yang menyenangkan bersama kami!</p>
+                    </div>
+                    <div class="footer-right">
+                        <h4>Contact Us</h4>
+                        <p>Alamat: Jln.Jurusan Montong Tangi-Moyot</p>
+                        <p>Telepon: 081997794672</p>
+                        <p>Email: @restoheri.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>2025 Heri Resto.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
